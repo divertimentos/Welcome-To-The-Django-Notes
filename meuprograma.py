@@ -1,1 +1,2 @@
-print(f"Python é {42}")
+resposta = 42
+print(f"Python é {resposta}")
