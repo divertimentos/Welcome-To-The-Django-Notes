@@ -1,7 +1,7 @@
 # M1A29: Visão além do alcance
 
 * ## Mindset:
-  * A melhor pergunta é "Qual é o seu problema?"/"O que você não consegue fazer?", em vez de "o que você precisa?". E é verdade. O cliente não necessariamente sabe do que ele precisa. c
+  * A melhor pergunta é "Qual é o seu problema?"/"O que você não consegue fazer?", em vez de "o que você precisa?". E é verdade. O cliente não necessariamente sabe do que ele precisa.
   * Ciclo de feedback curto:
     * O prazo já é algo dado; a qualidade já é intrínseca ao trabalho do programador; a única variável importante é o escopo.
     * Estimativas só fazem sentido prático para projetos longos, como projetos de 6 meses, por exemplo.
@@ -32,17 +32,63 @@
 
   * ###  Layout do projeto
 
-    * Importância da organização
-    * A importância de ser preguiçoso para a implementação do DRY
-    * Com o fluxo de trabalho ajustado é possível remover a necessidade de repetição
-    * A sua máquina é a **sua máquina**. Ela está inteiramente customizada para a sua produtividade, para a forma como você funciona, para a forma como você pensa, para a forma como você aborda os problemas
-    * Apenas otimize aquilo que você mede: mede o que acontece no presente e pode ser otimizado. Otimização precoce é um pecado.
-    * PDCA: **P**lan, **D**o, **C**heck, **A**ct
-    * 
+    * O diretório de trabalho, fora do eventex, é parte do seu trabalho de modo geral
+    * O diretório o projeto é onde estão as coisas que serão entregues a alguém
+    * Se inspirar na organização de diretórios e arquivos do Unix
 
   * ### Aliases e comandos auxiliares
 
-  * ### Se tá difícil, tá errado
+    * Importância da organização
 
-  *  
+    * A importância de ser preguiçoso para a implementação do DRY
 
+    * Com o fluxo de trabalho ajustado é possível remover a necessidade de repetição
+
+    * A sua máquina é a **sua máquina**. Ela está inteiramente customizada para a sua produtividade, para a forma como você funciona, para a forma como você pensa, para a forma como você aborda os problemas
+
+    * Apenas otimize aquilo que você mede: mede o que acontece no presente e pode ser otimizado. Otimização precoce é um pecado.
+
+    * PDCA: **P**lan, **D**o, **C**heck, **A**ct
+
+    * Deixar o idealismo de lado para entregar resultados
+
+    * ### Se tá difícil, tá errado
+
+      * Se você tá brigando com a máquina, com o ambiente, com o servidor, com a sua cadeira etc., tá errado. Você não deve ter insumos entre você e o resultado
+
+  ***
+
+   ## Autonomation
+
+  * Setup com 1 comando
+    * Não depender de packages dos outros. O fork é seu amigo.
+
+  ## Pronto é quando está NO AR
+
+  A consolidação do projeto é colocar o código no ar.
+
+  * ### 1 código para N instâncias
+
+    * Inversão de dependência
+    * Ter N instâncias do projeto para simplificar a criação de ambientes de homologação
+    * [The Twelve-Factor App](https://12factor.net/pt_br/): as 12 características fundamentais de um software escalável.
+
+  * ### Deploy tem risco arquitetural
+
+    * Deploys no início do projeto são vantajosos para que se garanta que o projeto continue no ar do início ao fim
+    * Se você coloca no software *na rua* já no começo, isso é valor para o cliente, pois ele percebe o valor do que está sendo feito desde sempre. Código, para quem não é desenvolvedor, é mato.
+
+  * ### Simplicidade do deploy impacta a frequência
+
+    * Keep it simple, stupid (KISS)
+    * Encurtar o caminho entre ideias e a execução delas é um objetivo
+    * Faça o necessário, não mais que o necessário
+    * Não trabalhar pro medo, trabalhar pro valor do cliente
+
+  * ### O Heroku é barato
+
+    * 
+
+  ## A arma secreta do Tony Stark
+
+  
