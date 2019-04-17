@@ -3,7 +3,7 @@
 * ## Mindset:
   * A melhor pergunta é "Qual é o seu problema?"/"O que você não consegue fazer?", em vez de "o que você precisa?". E é verdade. O cliente não necessariamente sabe do que ele precisa.
   * Ciclo de feedback curto:
-    * O prazo já é algo dado; a qualidade já é intrínseca ao trabalho do programador; a única variável importante é o escopo.
+    * O prazo já é algo dado; a qualidade já é intrínseca ao trabalho do programador; **a única variável importante é o escopo**.
     * Estimativas só fazem sentido prático para projetos longos, como projetos de 6 meses, por exemplo.
     * É dos fatos concretos que você extrai projeções, e não de estimativas
 
@@ -87,8 +87,78 @@
 
   * ### O Heroku é barato
 
-    * 
+    * O Heroku custa menos do que um funcionário capaz de dar manutenção, caso o seu core business não seja isso
+    * Se você estiver fazendo um blog pessoal: WordPress.
 
   ## A arma secreta do Tony Stark
+
+  * ### O poder por trás da sintaxe simples
+
+    * Autoexplicativo
+
+  * ### Algo nível dos bits e bytes
+
+    * O Python vai além de ser apenas uma linguagem alto nível
+    * Longe do domínio dos dados de baixo nível, o nível dos símbolos/signos, similar aos conceitos de significante e significado saussureanos, constitui o nível humano alcançado pelo Python
+    * O Python te deixa pensar menos em detalhes de baixo nível e mais em níveis simbólicos mais altos, mais próximos da realidade
+    * 
+
+  * ### Conceitos e abstrações poderosos
+
+    * **Namespaces**
+      * Não existem variáveis globais. Tudo está nos módulos, importando tudo
+      * Células
+    * **Referências**
+      * Runtime
+    * **Sequências**
+      * Criar objetos que se comportam como sequências
+      * Te liberta do conceito de arrays, abstraindo-os para a ideia de sequências
+    * **Iteradores**
+      * Filas/Pilhas
+      * Pedem o próximo
+    * **Valor lógico de um objeto**
+      * Expressão lógica e valor lógico de um objeto
+      * Quando um objeto é True ou é False
+      * É possível utilizar qualquer objeto como booleano
+    * **Mutabilidade**
+      * Todo objeto que você pode mudar o estado interno dele
+    * **Imutabilidade**
+      * Objeto que você não troca o estado interno dele, podendo no máximo derivar algo a partir dele
+      * Python suporta o paradigma funcional: o input nunca muda; sempre é gerado um novo dado
+      * Quanto mais encadeado, através de processos imutáveis, o seu processo estiver estruturado, mais fácil será a paralelização da execução do código 
+    * **Métodos Mágicos/Especiais**
+      * Os dunder (double underscores)
+    * **Sobrecarga de operadores**
+      * Implementação de comportamentos e operadores
+      * Documentação do [Set()](https://docs.python.org/3.7/library/stdtypes.html#set-types-set-frozenset)
+        * Realiza operações de conjuntos matemáticos de fato
+    * **Tipos Fortes**
+      * O Python não altera tipos depois de criados****
+      * **O Python simplifica a sintaxe, sendo uma linguagem dinâmica, mas sua tipagem é forte**
+    * **Strings que não são bytes**
+      * Strings são objetos com seu próprio contexto
+      * São diferentes de apenas "texto"
+      * Programar o software como um sanduíche: traduzir de bytes para Unicode para conseguir representar qualquer idioma humano ou alienígena (👽)
+      * A mudança mais importante do Python 2 pro Python 3 é em relação ao Unicode. Houve uma mudança fundamental nas strings que foram convertidas para Unicode
+    * **Funções são objetos**
+      * Funções não são só trechos de código
+      * Criação de funções dinamicamente enquanto uma função é executada
+      * Encapsulamento de funções dentro de funções ([functools](https://docs.python.org/3/library/functools.html))
+
+  * ### Açúcar sintático adoça a vida
+
+    * Abstração de eventos que acontecem debaixo do capô
+    * Referências sobre runtime services e sobre o parser e o tokenizador do Python
+
+  * ### O Zen do Python está presente no código
+
+    * Combinar forma e função a depender do contexto
+    * O Zen do Python nos torna desenvolvedores melhores
+
+  * ### O poder das baterias
+
+    * Conceito de "verdade material"
+    * **Não ser refém do que já foi feito. Ser protagonista e decidir pra onde a coisa vai.**
+    * O Jarvis está pro Tony Stark assim como o Python está pros programadores
 
   
