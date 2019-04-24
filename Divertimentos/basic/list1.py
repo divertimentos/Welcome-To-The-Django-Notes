@@ -39,8 +39,17 @@ def match_ends(words):
 
 
 def front_x(words):
-    # +++your code here+++
-    return
+    lista = list()
+    listx = list()
+    for string in words:
+        if string[0] == "x":
+            listx.append(string)
+        else:
+            lista.append(string)
+        lista.sort()
+        listx.sort()
+
+    return listx + lista
 
 
 # C. sort_last
