@@ -35,9 +35,9 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-    # +++your code here+++
-    return
-
+    start = 0
+    stop = 2
+    return False
 
 # F. front_back
 # Consider dividing a string into two halves.
