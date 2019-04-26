@@ -35,18 +35,24 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-    substring = str()
+    # substring = str()
     head = str()
+    tail = str()
     splitted_list = s.split()
+    
     for index, item in enumerate(splitted_list):
         if item == "not":
-            head = s.index(item)
-            filtered_s = s[head:]
-            if "bad" in filtered_s:
-                filtered_s = "good"
-                # print(filtered_s)
-        else:
-            return s
+            not_index = s.index(item)
+
+            tail = s[not_index:]
+            head = s[:not_index]
+            
+            if "bad" in tail:
+                tail = "good"
+                return f"{head}{tail}"
+            else:
+                return ' '.join(splitted_list)
+    return ' '.join(splitted_list)
 
 # F. front_back
 # Consider dividing a string into two halves.
@@ -81,7 +87,7 @@ def main():
     print()
     print('not_bad')
     test(not_bad('This movie is not so bad'), 'This movie is good')
-    test(not_bad('This dinner is not that bad!'), 'This dinner is good!')
+    test(not_bad('This dinner is not that bad'), 'This dinner is good')
     test(not_bad('This tea is not hot'), 'This tea is not hot')
     test(not_bad("It's bad yet not"), "It's bad yet not")
     test(not_bad("This sentence doesn't have the keyword"), "This sentence doesn't have the keyword")
