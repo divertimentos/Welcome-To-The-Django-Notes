@@ -36,8 +36,9 @@ def remove_adjacent(nums):
 # Ideally, the solution should work in "linear" time, making a single
 # pass of both lists.
 def linear_merge(list1, list2):
-    # +++your code here+++
-    return
+    merged_list = list()
+    merged_list = (list1 + list2)
+    return sorted(merged_list)
 
 
 # Note: the solution above is kind of cute, but unforunately list.pop(0)
