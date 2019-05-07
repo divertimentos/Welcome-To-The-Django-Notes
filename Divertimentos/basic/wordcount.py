@@ -46,13 +46,20 @@ import sys
 # and builds and returns a word/count dict for it.
 # Then print_words() and print_top() can just call the utility function.
 
+def print_words(filename):
+    file = open(filename, "r")
+    
+    for i in file:
+        print(i)
+
+
 ###
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
 def main():
     if len(sys.argv) != 3:
-        print('usage: ./wordcount.py {--count | --topcount} file')
+        print('usage: python wordcount.py {--count | --topcount} filename')
         sys.exit(1)
 
     option = sys.argv[1]
