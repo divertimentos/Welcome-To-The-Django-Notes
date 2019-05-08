@@ -47,16 +47,44 @@ import sys
 # Then print_words() and print_top() can just call the utility function.
 
 def print_words(filename):
-    file = open(filename, "r")
+    entrada = open(filename, "r")
+    lexico = dict()
+
+    for linha in entrada:
+        tokens = linha.strip().split(" ")
+        for token in tokens:
+            if token.isalpha():
+                token = token.lower()
+                lexico[token] = lexico.get(token, 0) + 1
+
+    for token in sorted(lexico.keys(), key=lexico.get, reverse=True):
+        print(f"{token} {str(lexico.get(token))}")
+
+
+def print_top(filename):
+    entrada = open(filename, "r")
+    lexico = dict()
+
+    for linha in entrada:
+        tokens = linha.strip().split(" ")
+        for token in tokens:
+            if token.isalpha():
+                token = token.lower()
+                lexico[token] = lexico.get(token, 0) + 1
+
     
-    for i in file:
-        print(i)
+    for token in sorted(lexico.keys(), key=lexico.get, reverse=True):
+        
+
+
 
 
 ###
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
+
+
 def main():
     if len(sys.argv) != 3:
         print('usage: python wordcount.py {--count | --topcount} filename')
