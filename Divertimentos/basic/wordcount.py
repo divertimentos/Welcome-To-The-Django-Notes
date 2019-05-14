@@ -61,25 +61,20 @@ def print_words(filename):
 
 
 def print_top(filename):
-    entrada = open(filename, "r")
     lexico = dict()
 
-    for linha in entrada:
-        tokens = linha.strip().split(" ")
-        for token in tokens:
+    for linha in open(filename, "r"):
+        for token in linha.strip().split(" "):
             if token.isalpha():
                 token = token.lower()
                 lexico[token] = lexico.get(token, 0) + 1
-    
+
     counter = 0
     for token in sorted(lexico.keys(), key=lexico.get, reverse=True):
         if counter < 20:
-            print(f"{counter + 1}º posição: '{token}' ({str(lexico.get(token))} vezes)")
+            print(
+                f"{counter + 1}º posição: '{token}' ({str(lexico.get(token))} vezes)")
             counter += 1
-
-
-
-
 
 
 ###
