@@ -47,12 +47,11 @@ import sys
 # Then print_words() and print_top() can just call the utility function.
 
 def print_words(filename):
-    entrada = open(filename, "r")
+    # entrada = open(filename, "r")
     lexico = dict()
 
-    for linha in entrada:
-        tokens = linha.strip().split(" ")
-        for token in tokens:
+    for linha in open(filename, "r"):
+        for token in linha.strip().split(" "):
             if token.isalpha():
                 token = token.lower()
                 lexico[token] = lexico.get(token, 0) + 1
@@ -74,7 +73,7 @@ def print_top(filename):
 
     
     for token in sorted(lexico.keys(), key=lexico.get, reverse=True):
-        
+        pass 
 
 
 
