@@ -70,10 +70,14 @@ def print_top(filename):
             if token.isalpha():
                 token = token.lower()
                 lexico[token] = lexico.get(token, 0) + 1
-
     
+    counter = 0
     for token in sorted(lexico.keys(), key=lexico.get, reverse=True):
-        pass 
+        if counter < 20:
+            print(f"{counter + 1}º posição: '{token}' ({str(lexico.get(token))} vezes)")
+            counter += 1
+
+
 
 
 
